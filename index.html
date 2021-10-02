@@ -28,31 +28,47 @@
 
   <!-- Login to get Client ID and Client Secret -->
   <div id="login-page">
-
-    <form>
-      <label for="clientID">Client ID:</label>
-      <input type="text" id="clientID" name="clientID"><br><br>
-      <label for="clientSecret">Client Secret:</label>
-      <input type="text" id="clientSecret" name="clientSecret"><br><br>
+    <header id="login-title">
+      <h1 class="login-name">Cadastre e comece o jogo!</h1>
+    </header>
+    <form id="form-div">
+      <h4 class="login-name">Login Kahootify</h4>
+      <label id="label-ID" class="input-group-text input-group-sm" for="clientID">Client ID:
+      <input class="form-control" type="text" id="clientID" name="clientID"></label><br><br>
+      <label class="input-group-text input-group-sm" for="clientSecret">Client Secret:
+      <input class="form-control" type="text" id="clientSecret" name="clientSecret"></label><br><br>
       <button id="save-login-btn" class="btn btn-success" type="submit">Save</button>
     </form>
-
-    <div id="instructions">
-      <p> Go to:
-        <br>
-        <a href="https://developer.spotify.com/dashboard/login" target="_blank">Spotify dev page</a>
-        <br>
-        and Login
-      </p>
-        <img src="./imgs/loginSpotifyDev.png" alt="login Spotify Dashboard" style="width:800px;height:100px;">
-      <p>create an App</p>
-        <img src="./imgs/createApp.png" alt="app creation" style="width:500px;height:600px;">
-      <p>Copy and paste the ID and the Secret in the input above.</p>
-        <img src="./imgs/clientIDandSecret.png" alt="client id and secret">
+    <div id="instr-display">
+      <div id="instructions">
+        <p> Go to:
+          <br>
+          <a href="https://developer.spotify.com/dashboard/login" target="_blank">Spotify dev page</a>
+          <br>
+          And Login, if you don't have an account create one, it only takes 2 minutes
+        </p>
+        <img class="pic" src="./imgs/loginSpotifyDev.png" alt="login Spotify Dashboard" style="width:550px;height:100px;">
+        <p>Next! Click in the option Create an App it will appear something similar to this:</p>
+        <img class="pic" src="./imgs/createApp.png" alt="app creation" style="width:450px;height:350px;">
+        <p>After you fill with the correct information, copy and paste the Client ID and the Client Secret in the input above.</p>
+        <img class="pic" src="./imgs/clientIDandSecret.png" alt="client id and secret">
+      </div>
+      <div id="instructions-pt-br">
+        <p> Vá para:
+          <br>
+          <a href="https://developer.spotify.com/dashboard/login" target="_blank">Spotify dev page</a>
+          <br>
+          Faça o login, caso não tenha uma conta crie uma, são apenas 2 minutinhos
+        </p>
+        <img class="pic" src="./imgs/loginSpotifyDev.png" alt="login Spotify Dashboard" style="width:550px;height:100px;">
+        <p>No próximo passo aperte na opção Criar um App e aparecerá algo similar a isso:</p>
+        <img class="pic" src="./imgs/createApp.png" alt="app creation" style="width:450px;height:350px;">
+        <p>Após preencher as informações copie e cole as respectivas informações (Cliente ID e Cliente Secrect) no Login acima.</p>
+        <img class="pic" src="./imgs/clientIDandSecret.png" alt="client id and secret">
+      </div>
     </div>
-
   </div>
-
+  </div>
   <!-- Pagina inicial do jogo onde a pessoa vai selecionar o genero muscial. -->
   <div id="front-page">
     <header>
@@ -85,7 +101,7 @@
                 <div class="modal-body">
                   O Kahootify consiste em um jogo de adivinhação, você escuta muitas músicas? É o que veremos, pois para
                   vencer é preciso adivinhar o maior número de músicas possíveis no menor tempo! Acerte clicando nas
-                  opções mostradas abaixo na página! Boa sorte e lembre-se, <u>quanto mais rápido responder, mais pontos
+                  opções mostradas na página! Boa sorte e lembre-se, <u>quanto mais rápido responder, mais pontos
                     ganhará!</u>
                 </div>
                 <div class="modal-footer">
@@ -162,6 +178,7 @@
     </main>
     <!-- tela de loading -->
     <div id="load"></div>
+  </div>
   <!-- JS Bootstrap -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"

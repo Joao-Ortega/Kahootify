@@ -1,33 +1,126 @@
+:root {
+  --blueKahoot: #1368CE;
+  --redKahoot: #E21B3C;
+  --yellowKahoot: #D09F36;
+  --greenKahoot: #26890C;
+  --backgroundKahoot: #F2F2F2;
+  --cardsBackGround: #535353;
+  --cinzaEscuroSpotify: #121212;
+  --cinzaClaroSpotify: #efefef;
+  --greenSpotify: #1fd660;
+}
+
+body {
+  background: hsla(113, 81%, 71%, 1);
+
+background: linear-gradient(90deg, hsla(113, 81%, 71%, 1) 0%, hsla(118, 75%, 77%, 1) 12.5%, hsla(108, 60%, 75%, 1) 25%, hsla(116, 23%, 66%, 1) 37.5%, hsla(120, 12%, 51%, 1) 50%, hsla(207, 6%, 32%, 1) 62.5%, hsla(210, 9%, 31%, 1) 75%, hsla(210, 10%, 23%, 1) 87.5%, hsla(210, 11%, 15%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(113, 81%, 71%, 1) 0%, hsla(118, 75%, 77%, 1) 12.5%, hsla(108, 60%, 75%, 1) 25%, hsla(116, 23%, 66%, 1) 37.5%, hsla(120, 12%, 51%, 1) 50%, hsla(207, 6%, 32%, 1) 62.5%, hsla(210, 9%, 31%, 1) 75%, hsla(210, 10%, 23%, 1) 87.5%, hsla(210, 11%, 15%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(113, 81%, 71%, 1) 0%, hsla(118, 75%, 77%, 1) 12.5%, hsla(108, 60%, 75%, 1) 25%, hsla(116, 23%, 66%, 1) 37.5%, hsla(120, 12%, 51%, 1) 50%, hsla(207, 6%, 32%, 1) 62.5%, hsla(210, 9%, 31%, 1) 75%, hsla(210, 10%, 23%, 1) 87.5%, hsla(210, 11%, 15%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#89F17B", endColorstr="#9AF097", GradientType=1 );
+}
+
 #login-page {
-  width: 400px;
   margin: 0 auto;
   padding-top: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 #login-page form {
   padding: 15px 60px;
   color: #BBB;
-  background-color: #333;
+  background-color: var(--cinzaEscuroSpotify);
   font-size: 18px;
   border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#login-title {
+  display: flex;
+  justify-content: center;
+  color: var(--backgroundKahoot);
+  font-family: 'Overpass', sans-serif;
+  font-weight: bolder;
+  text-shadow: 0 0 10px var(--cinzaEscuroSpotify);
+}
+
+#form-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+  box-shadow: rgb(71, 117, 50) 0px 50px 100px -20px, rgb(8, 8, 8) 0px 30px 60px -30px, rgb(106, 216, 56) 0px -2px 6px 0px inset;
+}
+
+#label-ID {
+  margin-top: 8%;
+}
+
+#clientID {
+  margin-left: 8px;
+}
+
+#clientSecret {
+  margin-left: 8px;
+}
+
+#save-login-btn {
+  align-self: flex-end;
+}
+
+#instr-display {
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
+  color: #000000;
+}
+
+a:hover {
+  color: red;
 }
 
 #instructions {
-  width: 900px;
-  padding: 20px;
+  width: 750px;
+  height: 925px;
   margin-bottom: 20px;
-  background-color: #343;
+  background-color: rgb(58, 58, 58);
   margin-top: 10px;
   color: #BBB;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 20px;
   line-height: 2rem;
+  box-shadow: rgb(0, 0, 0) 0px 22px 70px 4px;
+}
+
+.pic {
+  border: 5px ridge var(--cinzaEscuroSpotify);
 }
 
 #instructions p{
+  margin-top: 10px;
+  text-align: center;
+}
+
+#instructions-pt-br {
+  width: 750px;
+  height: 925px;
+  margin-bottom: 20px;
+  background-color: rgb(58, 58, 58);
+  margin-top: 10px;
+  color: #BBB;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 2rem;
+  box-shadow: rgb(0, 0, 0) 0px 22px 70px 4px;
+}
+
+#instructions-pt-br p{
   margin-top: 10px;
 }
 
