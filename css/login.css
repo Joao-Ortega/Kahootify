@@ -1,0 +1,38 @@
+#login-page {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-page form {
+  padding: 15px 60px;
+  color: #BBB;
+  background-color: #333;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+#instructions {
+  width: 900px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #343;
+  margin-top: 10px;
+  color: #BBB;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+#instructions p{
+  margin-top: 10px;
+}
+
+#login-page img{
+  border-radius: 2px;
+  display: block;
+  margin: 0 auto;
+}
